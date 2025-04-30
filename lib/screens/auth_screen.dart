@@ -19,7 +19,7 @@ class AuthScreen extends StatelessWidget {
         elevation: 0,
         centerTitle: true,
         backgroundColor: Colors.white,
-        title: const Text('Notes App'),
+        title: const Text('Voice To Do App by 22IT003'),
       ),
       backgroundColor: Colors.white,
       body: SingleChildScrollView(

@@ -1,5 +1,5 @@
 import 'package:google_fonts/google_fonts.dart';
-import 'package:voice_based_notes_app/widgets/snackbar_widget.dart';
+import 'package:externalpractical/widgets/snackbar_widget.dart';
 import '/screens/notes_info_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';

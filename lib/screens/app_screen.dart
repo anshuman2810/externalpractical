@@ -14,11 +14,11 @@ class AppScreen extends StatefulWidget {
 class _AppScreenState extends State<AppScreen> {
   final _screens = [
     {
-      'title': 'All Notes',
+      'title': 'All Tasks',
       'page': NotesScreen(),
     },
     {
-      'title': 'Favourite Notes',
+      'title': 'Favourite Tasks',
       'page': NotesScreen(isFavouriteScreen: true),
     },
   ];
