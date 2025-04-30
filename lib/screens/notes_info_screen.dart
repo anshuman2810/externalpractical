@@ -17,7 +17,7 @@ class NotesInfoScreen extends StatelessWidget {
     final notes = Provider.of<NotesInfo>(context, listen: false);
 
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.purpleAccent,
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.white,
@@ -125,16 +125,16 @@ class NotesInfoScreen extends StatelessWidget {
                 builder: (context, notes, _) => IconButton(
                   onPressed: () => notes
                       .toggleFavourites(
-                        userId: authData.userId!,
-                        authToken: authData.token!,
-                      )
+                    userId: authData.userId!,
+                    authToken: authData.token!,
+                  )
                       .then((_) => SnackBarWidget(
-                            context: context,
-                            label: notes.isFavourite
-                                ? 'Note added to favorite'
-                                : 'Note removed from favorites',
-                            color: Colors.grey[200]!,
-                          ).show()),
+                    context: context,
+                    label: notes.isFavourite
+                        ? 'Note added to favorite'
+                        : 'Note removed from favorites',
+                    color: Colors.grey[200]!,
+                  ).show()),
                   iconSize: 30,
                   color: Colors.red,
                   splashRadius: 25,

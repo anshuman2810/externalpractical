@@ -92,7 +92,7 @@ class _NotesScreenState extends State<NotesScreen> {
                     return showMessage('No Favourites added yet!');
                   }
                   if (notesInfo.notes.isEmpty && !widget.isFavouriteScreen) {
-                    return showMessage('No notes added yet!');
+                    return showMessage('No Tasks added yet!');
                   }
                   return Expanded(
                     child: ListView.builder(

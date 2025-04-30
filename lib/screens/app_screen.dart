@@ -18,7 +18,7 @@ class _AppScreenState extends State<AppScreen> {
       'page': NotesScreen(),
     },
     {
-      'title': 'Favourite Tasks',
+      'title': 'Favourite Notes',
       'page': NotesScreen(isFavouriteScreen: true),
     },
   ];
@@ -29,7 +29,7 @@ class _AppScreenState extends State<AppScreen> {
   Widget build(BuildContext context) {
     final bool showFab = MediaQuery.of(context).viewInsets.bottom == 0.0;
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.purpleAccent,
       appBar: AppBar(
         leading: Builder(
           builder: (ctx) => IconButton(
@@ -84,18 +84,18 @@ class _AppScreenState extends State<AppScreen> {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: showFab
           ? FloatingActionButton(
-              heroTag: null,
-              elevation: 6,
-              onPressed: () => Navigator.of(context).pushNamed(
-                TextToSpeechScreen.routeName,
-              ),
-              backgroundColor: Colors.grey[200],
-              child: const Icon(
-                Icons.add,
-                color: Colors.grey,
-                size: 30,
-              ),
-            )
+        heroTag: null,
+        elevation: 6,
+        onPressed: () => Navigator.of(context).pushNamed(
+          TextToSpeechScreen.routeName,
+        ),
+        backgroundColor: Colors.grey[200],
+        child: const Icon(
+          Icons.add,
+          color: Colors.grey,
+          size: 30,
+        ),
+      )
           : null,
     );
   }
