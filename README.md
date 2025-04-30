@@ -1,16 +1,35 @@
-# externalpractical
+# Voice Assisted To Do list : External Pratical examination task.
 
-A new Flutter project.
+A Voice Assisted To Do list flutter application by 22IT003 - Anshuman Prajapati.
 
-## Getting Started
+# Folder Structure 
+lib :
 
-This project is a starting point for a Flutter application.
+  helpers:
+  
+    custom_route_animation.dart
+    
+  providers:
+  
+    auth.dart
+    notes.dart
+    
+  screens:
+  
+    app_screen.dart
+    auth_screen.dart
+    notes_info_screen.dart
+    notes_screen.dart
+    text_to_speech_screen.dart
+    
+  widgets:
+  
+    app_drawer.dart
+    notes_items.dart
+    snackbar_widget.dart
+    
+main.dart
 
-A few resources to get you started if this is your first Flutter project:
+# How to run?
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Clone this repository to you local git. Get all the dependencies using pub get, then flutter run!
